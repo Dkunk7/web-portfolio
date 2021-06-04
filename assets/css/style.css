@@ -8,10 +8,12 @@
     --color2: rgb(27,197,181);
     --color3: rgb(27,180,197);
     --color4: rgb(156,231,242);
+    --color5: rgb(56,69,71);
 }
 body {
     color: var(--color3);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--color5)
 }
 header {
     display: flex;
@@ -35,7 +37,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-size: 1.55vw;
     text-decoration: none;
-    color: var(--color3);
+    color: var(--color);
     font-weight: 600;
 }
 .img-h1 {
@@ -44,4 +46,29 @@ header nav ul li a {
 }
 .logo-img {
     padding-right: 20px;
+}
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid var(--color3);
+    margin: 0 auto 30px auto;
+    width: 60%;
+    
+    
+}
+.home-intro {
+   text-align: center; 
+}
+.home-intro h2 {
+    font-size: 3vw;
+    padding-bottom: 15px;
+    
+    color: var(--color1);
+}
+.home-intro p {
+    font-size: 1.4vw;
+    color: var(--color2);
+    line-height: 1.5;
 }
