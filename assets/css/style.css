@@ -79,14 +79,17 @@ header nav ul li a {
     
     
 }
-#projects h2, #about h2 {
+.necessary {
+    
+}
+#projects h2, #about h2, #contact h2 {
+    
     padding-top: 20px;
     padding-bottom: 30px;
     color: var(--color1);
     font-size: 50px;
+    margin: 0 120px 40px 120px;
     border-bottom: 1px solid var(--color3);
-    margin: 0 auto 40px auto;
-    width: 40%;
     text-align: center;
 }
 .project {
@@ -141,18 +144,36 @@ header nav ul li a {
     margin-right: 250px;
     padding-bottom: 50px;
 }
+#contact form {
+    margin: 0 200px 50px 200px;
+    display: flex;
+    justify-content: center;
+}
+#contact input {
+    border: 2px solid var(--color3);
+    padding: 7px 15px;
+    font-size: 22px;
+    color: var(--color3);
+    width: 50%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: var(--color4);
+}
 footer {
     padding: 20px 35px;
     background-color: var(--color4);
 }
 
-@media screen and (max-width: 1425px) {
-    /* .project h3 {
-        font-size: 2vw;
+@media screen and (max-width: 1300px) {
+    #about p {
+        margin-left: 150px;
+        margin-right: 150px;
     }
-    .project p {
-        font-size: 1.4vw;
-    } */
+    #contact form {
+        margin-left: 140px;
+        margin-right: 140px;
+    }
 }
 @media screen and (max-width: 980px) {
     /* .project h3 {
@@ -161,6 +182,10 @@ footer {
     .project p {
         font-size: 2vw;
     }*/
+    .home-intro {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
     #about p {
         margin-left: 100px;
         margin-right: 100px;
@@ -177,6 +202,10 @@ footer {
         width: 100%;
         justify-content: center;
     }
+    #contact form {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -186,13 +215,25 @@ footer {
     .project {
         margin: 0 40px 15px 40px;
     }
+    #projects h2 {
+        margin-left: 70px;
+        margin-right: 70px
+    }
     .proj-img {
         
+    }
+    #contact form {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
 
 @media screen and (max-width: 575px) {
     header nav ul li a {
         font-size: 28px;
+    }
+    #contact form {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
